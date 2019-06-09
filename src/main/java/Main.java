@@ -13,7 +13,12 @@ public class Main {
         System.out.println("podaj wiek");
         int age = sc.nextInt();
 
-        Person person = new Person(fname, lname, age, pesel);
+        Person person = null;
+        try {
+            person = new Person(fname, lname, age, pesel);
+        } catch (IncorrectAgeException | NameUndefinedException e) {
+            e.printStackTrace();
+        }
         System.out.println(person);
     }
 }

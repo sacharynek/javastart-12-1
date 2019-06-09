@@ -1,3 +1,3 @@
-public class IncorrectAgeException extends RuntimeException {
+public class IncorrectAgeException extends Exception {
 
 }
