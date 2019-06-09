@@ -13,7 +13,7 @@ public class Main {
         System.out.println("podaj wiek");
         int age = sc.nextInt();
 
-        Person person = new Person(fname,lname,age,pesel);
+        Person person = new Person(fname, lname, age, pesel);
         System.out.println(person);
     }
 }
